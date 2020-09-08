@@ -15,13 +15,13 @@
             <img class="col-6" src="@/assets/img/blog-img/blog-content-img-small.png" alt="">
             <img class="col-6" src="@/assets/img/blog-img/blog-content-img-small-p.png" alt="">
           </div>
-          <img class="mt-5" src="@/assets/img/blog-img/share-medias.png" alt="thumb">
-          <span class="d-flex mt-5">Tags: <span class="project-tag ml-3">Fashion</span><span class="project-tag ml-2">Shoes</span><span class="project-tag ml-2">Sneakers</span><span class="project-tag ml-2">Music</span></span>
-          <div class="manager-card d-flex mt-5">
+          <img class="mt-5 social-fix" src="@/assets/img/blog-img/share-medias.png" alt="thumb">
+          <span class="d-flex mt-5">Tags: <span class="project-tag ml-3">Fashion</span><span class="project-tag ml-2">Shoes</span><span class="project-tag ml-2 d-none d-sm-block">Sneakers</span><span class="project-tag ml-2">Music</span></span>
+          <div class="manager-card d-flex flex-column flex-md-row mt-5">
             <div class="manager-card-thumb">
               <img src="@/assets/img/blog-img/manager-thumb.png" alt="thumb">
               <div class="manager-cart-thumb-footer d-flex align-items-center justify-content-center">
-                <span class="text-white text-center">
+                <span class="text-white text-center mb-3">
                   <p class="text-size-18">WILLIUM CARRY</p>
                   <p class="text-size-14">Quality Manager</p>
                 </span>
@@ -29,7 +29,7 @@
             </div>
             <div class="text-white p-4 d-flex flex-column justify-content-between">
               <p class="text-size-14 line-26">Hi, my name is Faruk Ahmed. I'm a web developer & graphic designer. Working as a graphic designer for more than 9 years and as a web developer working for 7 years. I hope you'll find my quality and my skills in my portfolio. So, please take a look at my portfolio and consider me for your next awesome project. Thanks for reading and visiting my post.</p>
-              <div class="team-socials d-flex justify-content-between text-white align-items-center">
+              <div class="team-socials d-flex justify-content-between text-white align-items-center mt-3">
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-instagram"></i>
@@ -142,7 +142,7 @@
             <span class="project-tag mr-2">Sports</span>
             <span class="project-tag mr-2">Travels</span>
             <h3 class="text-size-24 text-theme-color mt-5 mb-4">Recent Instagram</h3>
-            <img src="@/assets/img/blog-img/recent-instagram.png" alt="Recent instagram">
+            <img class="w-100" src="@/assets/img/blog-img/recent-instagram.png" alt="Recent instagram">
             <h3 class="text-size-24 text-theme-color mt-5 mb-4">Categories</h3>
             <p class="mb-1">Design (2)</p>
             <p class="mb-1">Education (1)</p>
@@ -179,6 +179,10 @@ export default {
 </script>
 
 <style scoped>
+.social-fix{
+  width: 100%;
+  max-width: 540px;
+}
 .blog-section{
   padding: 120px 0;
 }
@@ -202,7 +206,8 @@ export default {
   font-size: 7px;
 }
 .manager-card img{
-  border-radius: 6px 0 0 0;
+  border-radius: 6px 6px 0 0;
+  width: 100%;
   top: 0;
 }
 .manager-card{
@@ -210,10 +215,10 @@ export default {
   background-color: var(--secondary-color);
 }
 .manager-card-thumb{
-  min-height: 267px;
+  min-width: 255px;
   position: relative;
   border: solid 2px var(--theme-color);
-  border-radius: 6px 0 0 6px;
+  border-radius: 6px 6px 0 0;
   background-color: var(--theme-color);
 }
 .manager-cart-thumb-footer{
@@ -257,5 +262,13 @@ export default {
   width: 200px;
   border-radius: 28px;
   font-size: 18px;
+}
+@media (min-width: 768px) {
+  .manager-card img{
+    border-radius: 6px 0 0 0;
+  }
+  .manager-card-thumb{
+    border-radius: 6px 0 0 6px;
+  }
 }
 </style>
