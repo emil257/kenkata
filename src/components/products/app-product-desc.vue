@@ -3,7 +3,7 @@
     <div class="container">
       <div class="product-desc-tabs d-flex">
         <span class="product-desc-tab">Description</span>
-        <span class="product-desc-tab">Additional Information</span>
+        <span class="product-desc-tab d-none d-md-block">Additional Information</span>
         <span class="product-desc-tab active">Reviews (2)</span>
         <span class="product-desc-tab">About Brand</span>
       </div>

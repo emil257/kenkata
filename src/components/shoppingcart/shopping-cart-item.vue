@@ -2,8 +2,8 @@
   <div class="d-flex class align-items-center justify-content-between">
     <span class="d-flex align-items-center">
     <img src="@/assets/img/shop-img/remove-icon.png" alt="remove" class="mr-3">
-      <img src="@/assets/img/product-img/product-icon.png" alt="remove" class="mr-3">
-      <p>Women smart high heel shoe</p>
+      <img src="@/assets/img/product-img/product-icon.png" alt="remove" class="mr-3 d-none d-sm-block">
+      <p class="mx-2">Women smart high heel shoe</p>
     </span>
     <span class="d-flex align-items-center">
       <p>$190.00</p>
