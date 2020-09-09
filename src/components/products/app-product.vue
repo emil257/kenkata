@@ -41,11 +41,11 @@
         <i class="far fa-star"></i>
       </div>
       <div class="product-overlay-controller d-flex align-items-center flex-column justify-content-between" :class="{rft: removable}">
-        <i class="fas fa-circle text-danger red-tooltip" data-toggle="tooltip" data-placement="left" title="Color"></i>
-        <i class="far fa-heart" data-toggle="tooltip" data-placement="left" title="Color"></i>
-        <i class="fas fa-arrows-alt-h m" data-toggle="tooltip" data-placement="left" title="Color"></i>
-        <router-link to="/product" data-toggle="tooltip" data-placement="left" title="Color"><i class="fas fa-search"></i></router-link>
-        <i class="fas fa-cart-plus" data-toggle="tooltip" data-placement="left" title="Color"></i>
+        <i class="fas fa-circle text-danger fix-controll" data-toggle="tooltip" data-placement="left" title="Color"></i>
+        <i class="far fa-heart fix-controll" data-toggle="tooltip" data-placement="left" title="Add to wishlist"></i>
+        <i class="fas fa-arrows-alt-h fix-controll" data-toggle="tooltip" data-placement="left" title="Compare"></i>
+        <router-link to="/product" data-toggle="tooltip" data-placement="left" title="Quick view" class="fix-controll"><i class="fas fa-search"></i></router-link>
+        <i class="fas fa-cart-plus fix-controll" data-toggle="tooltip" data-placement="left" title="Add to cart"></i>
       </div>
     </div>
 
@@ -59,7 +59,10 @@ export default {
 </script>
 
 <style scoped>
-
+.fix-controll{
+  text-align: center;
+  width: 100%;
+}
 
 
 .product-background{
