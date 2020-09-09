@@ -4,7 +4,7 @@
         <p class="font-size-24 text-theme-color">Women's fashion</p>
         <p class="text-white">Fashion</p>
       </span>
-      <img src="@/assets/img/blog-img/plus-icon.png" alt="add" class="img-fix">
+      <img src="@/assets/img/blog-img/plus-icon.png" alt="add" class="img-fix d-none">
     </router-link>
 </template>
 
@@ -26,19 +26,19 @@ export default {
 .project-item span {
   display: none;
 }
-.project-item img {
-  display: none;
+.img-fix{
+  display: none !important;
   position: absolute;
   top: 20px;
   right: 20px;
   height: 100px;
-  width: 100px;
+  width: 100px !important;
 }
 .project-item:hover {
   background-color: var(--secondary-color);
-  text-decoration: none !important;
+  text-decoration: none;
 }
 .project-item:hover img, .project-item:hover span {
-  display: inline-block;
+  display: inline-block !important;
 }
 </style>

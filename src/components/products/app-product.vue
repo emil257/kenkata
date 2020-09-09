@@ -41,11 +41,11 @@
         <i class="far fa-star"></i>
       </div>
       <div class="product-overlay-controller d-flex align-items-center flex-column justify-content-between" :class="{rft: removable}">
-        <i class="fas fa-circle text-danger"></i>
-        <i class="far fa-heart"></i>
-        <i class="fas fa-arrows-alt-h m"></i>
-        <router-link to="/product"><i class="fas fa-search"></i></router-link>
-        <i class="fas fa-cart-plus"></i>
+        <i class="fas fa-circle text-danger red-tooltip" data-toggle="tooltip" data-placement="left" title="Color"></i>
+        <i class="far fa-heart" data-toggle="tooltip" data-placement="left" title="Color"></i>
+        <i class="fas fa-arrows-alt-h m" data-toggle="tooltip" data-placement="left" title="Color"></i>
+        <router-link to="/product" data-toggle="tooltip" data-placement="left" title="Color"><i class="fas fa-search"></i></router-link>
+        <i class="fas fa-cart-plus" data-toggle="tooltip" data-placement="left" title="Color"></i>
       </div>
     </div>
 
@@ -59,6 +59,9 @@ export default {
 </script>
 
 <style scoped>
+
+
+
 .product-background{
   padding: 25px;
   padding-bottom: 46px;

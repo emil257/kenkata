@@ -136,6 +136,22 @@ p, h5{
   font-size: 60px
 }
 
+.tooltip-inner {
+  background-color: var(--theme-color);
+}
+.tooltip.bs-tooltip-right .arrow::before {
+  border-right-color: var(--theme-color); 
+}
+.tooltip.bs-tooltip-left .arrow::before {
+  border-left-color: var(--theme-color);
+}
+.tooltip.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: var(--theme-color);
+}
+.tooltip.bs-tooltip-top .arrow::before {
+  border-top-color: var(--theme-color);
+}
+
 .line-26{
   line-height: 26px;
 }
